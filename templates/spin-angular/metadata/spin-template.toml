@@ -1,0 +1,13 @@
+manifest_version = "1"
+id = "spin-angular"
+description = "Build your front-end application using Angular and Spin"
+
+[add_component]
+skip_files = ["spin.toml"]
+[add_component.snippets]
+component = "component.txt"
+
+[parameters]
+project-description = { type = "string", prompt = "Project description", default = "" }
+http-path = { type = "string", prompt = "HTTP path", default = "/...", pattern = "^/\\S*$" }
+
